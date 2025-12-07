@@ -1,8 +1,8 @@
 crewai==1.6.1
 streamlit==1.46.1
 mistralai==1.9.11
-langchain==1.1.2
-langchain-community==0.4.1
+langchain==0.3.26
+langchain-community==0.3.26
 langchain-mistralai==0.2.11
 python-dotenv==1.2.1
 ddgs==9.9.3
