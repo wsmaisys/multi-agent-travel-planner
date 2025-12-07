@@ -167,9 +167,15 @@ if generate_btn:
             st.subheader("📊 Travel Plan Results")
             
             # Create tabs for better organization
-            tab1, tab2, tab3, tab4 = st.tabs(["📍 Location Info", "🎯 Local Guide", "📝 Full Itinerary", "📥 Downloads"])
+            tab1, tab2, tab3, tab4 = st.tabs(["📝 Full Itinerary", "📍 Location Info", "🎯 Local Guide", "📥 Downloads"])
             
             with tab1:
+                st.markdown('<div class="agent-section planner-section">', unsafe_allow_html=True)
+                st.markdown("### ✈️ Travel Planner Expert Report")
+                st.markdown(st.session_state.planner_response)
+                st.markdown('</div>', unsafe_allow_html=True)
+            
+            with tab2:
                 st.markdown('<div class="agent-section location-section">', unsafe_allow_html=True)
                 st.markdown("### 🏢 Location Expert Report")
                 if st.session_state.location_response:
@@ -178,19 +184,13 @@ if generate_btn:
                     st.info("Location information is included in the final itinerary below.")
                 st.markdown('</div>', unsafe_allow_html=True)
             
-            with tab2:
+            with tab3:
                 st.markdown('<div class="agent-section guide-section">', unsafe_allow_html=True)
                 st.markdown("### 🎭 Local Guide Expert Report")
                 if st.session_state.guide_response:
                     st.markdown(st.session_state.guide_response)
                 else:
                     st.info("Guide information is included in the final itinerary below.")
-                st.markdown('</div>', unsafe_allow_html=True)
-            
-            with tab3:
-                st.markdown('<div class="agent-section planner-section">', unsafe_allow_html=True)
-                st.markdown("### ✈️ Travel Planner Expert Report")
-                st.markdown(st.session_state.planner_response)
                 st.markdown('</div>', unsafe_allow_html=True)
             
             with tab4:

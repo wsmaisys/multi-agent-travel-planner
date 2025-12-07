@@ -2,6 +2,11 @@
 
 An intelligent multi-agent travel planning system powered by CrewAI that generates personalized travel itineraries using AI agents working collaboratively.
 
+## 🔗 Quick Links
+
+- **🌐 Live Demo**: [https://multi-agent-travel-planner-crew.streamlit.app/](https://multi-agent-travel-planner-crew.streamlit.app/)
+- **📚 GitHub Repository**: [https://github.com/wsmaisys/multi-agent-travel-planner](https://github.com/wsmaisys/multi-agent-travel-planner)
+
 ## 📋 Features
 
 - **🏢 Location Expert Agent** - Gathers comprehensive travel information including accommodations, cost of living, visa requirements, transportation, weather forecasts, and local events
@@ -170,7 +175,7 @@ The system will generate:
 ### Port already in use
 
 ```bash
-streamlit run app.py --server.port 8502
+streamlit run app.py --server.port 8501
 ```
 
 ### Module not found errors
@@ -184,7 +189,9 @@ Feel free to modify and improve the agents, tasks, and tools to suit your needs!
 
 ## 📄 License
 
-This project is open source and available for personal and educational use.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+Copyright © 2025 Wasim Ansari. All rights reserved.
 
 ## 🙋 Support
 
