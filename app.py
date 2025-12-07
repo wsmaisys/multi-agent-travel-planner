@@ -92,7 +92,7 @@ if "execution_log" not in st.session_state:
 st.divider()
 
 # Informational message about the AI agents
-st.info("🤖 **Three AI Agents are working together** to craft you the best travel plan. It may take **1 to 2 minutes** to display the result. Please be patient! ⏳")
+st.info("🤖 **Three AI Agents working together** to craft you the best travel plan. It may take **1 to 2 minutes** to display the result. Please be patient while we craft you the best itinerary! ⏳")
 
 col_button = st.columns([1, 2, 1])
 with col_button[1]:
