@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='pydantic')
+
 from TravelAgents import guide_expert, location_expert, planner_expert
 from TravelTasks import location_task, guide_task, planner_task
 from crewai import Crew, Process

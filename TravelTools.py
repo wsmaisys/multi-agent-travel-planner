@@ -1,5 +1,5 @@
 from crewai.tools import tool
-from langchain_community.tools import DuckDuckGoSearchResults
+from ddgs import DDGS
 
 @tool
 def search_web_tool(query: str):
@@ -17,5 +17,6 @@ def search_web_tool(query: str):
         raise ValueError(f"Query must be a string, got {type(query)}: {query}")
 
     # Perform the search
-    search_tool = DuckDuckGoSearchResults(num_results=10, verbose=True)
-    return search_tool.run(query)
+    with DDGS() as ddgs:
+        results = [r for r in ddgs.text(query, max_results=10)]
+    return str(results)
