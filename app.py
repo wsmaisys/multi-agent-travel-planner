@@ -90,6 +90,10 @@ if "execution_log" not in st.session_state:
 
 # Button to run CrewAI - Centered below inputs
 st.divider()
+
+# Informational message about the AI agents
+st.info("🤖 **Three AI Agents are working together** to craft you the best travel plan. It may take **1 to 2 minutes** to display the result. Please be patient! ⏳")
+
 col_button = st.columns([1, 2, 1])
 with col_button[1]:
     generate_btn = st.button("🚀 Generate Travel Plan", use_container_width=True, key="generate_btn")
